@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샘플 웹사이트</title>
+    <link rel="stylesheet" href="styles.css"<script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '9bed29c9-965e-46af-9f9f-0af175bf4756');
+        </script>/head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">홈</a></li>
+                <li><a href="sub1.html">소개</a></li>
+                <li><a href="sub2.html">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>환영합니다</h1>
+        <p>이것은 샘플 웹사이트의 메인 페이지입니다.</p>
+        <div class="feature-box">
+            <h2>주요 기능</h2>
+            <ul>
+                <li>반응형 디자인</li>
+                <li>깔끔한 네비게이션</li>
+                <li>모던한 레이아웃</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 샘플 웹사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>
